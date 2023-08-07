@@ -111,6 +111,7 @@ div.consulta{
     margin-right: 20px;
     padding-left: 10px;
     padding-right: 10px;
+    cursor: pointer;
 }
 
 div.ingreso-monto{
@@ -153,7 +154,7 @@ p{
     margin: auto;
 }
 
-.saldo{
+#saldo{
     background-color: white;
     color:rgb(96, 93, 93);
     display: flex;

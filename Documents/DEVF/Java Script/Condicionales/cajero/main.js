@@ -1,5 +1,6 @@
 function ingresar(event){
-    let username = document.getElementById("username").value;
+    // let username = document.getElementById("username").value;
+    let username = document.getElementById("username");
     let password = document.getElementById("password").value;
     let mensaje = document.getElementById("mensaje");
     
@@ -9,13 +10,13 @@ function ingresar(event){
         { nombre: "Maui",contraseña:"34Tu",saldo: 67 }
       ];
     
-    let cuentaEncontrada = cuentas.find(cuenta => cuenta.nombre === username);
+    // let cuentaEncontrada = cuentas.find(cuenta => cuenta.nombre === username);
 
-    if (cuentaEncontrada) {
-        localStorage.setItem('nombreUsuarioSeleccionado', cuentaEncontrada.nombre);
-        window.location.href = "inicio.html"; 
-    // if(username.value === "Mali" && password === "12Amo" || username.value === "Gera" && password === "Y90s" ||  username.value === "Maui" && password === "34Tu" )
-    // {
+    // if (cuentaEncontrada) {
+    //     localStorage.setItem('nombreUsuarioSeleccionado', cuentaEncontrada.nombre);
+    //     window.location.href = "inicio.html"; 
+    if(username.value === "Mali" && password === "12Amo" || username.value === "Gera" && password === "Y90s" ||  username.value === "Maui" && password === "34Tu" )
+    {
         window.location.href = "inicio.html";
         // Pendiente, inhabilitar boton de ingresar
     }else{
